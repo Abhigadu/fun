@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Guess the Number Game </title>
+
+	<style>
+		.button {
+		  background-color: DodgerBlue; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+
+		.button1 {font-size: 10px;}
+		.button2 {font-size: 12px;}
+		.button3 {font-size: 16px;}
+		.button4 {font-size: 20px;}
+		.button5 {font-size: 24px;}
+	</style>
+
+</head>
+<body> 
+
+	<br><br><br><br><br><br><br><br><br><br>
+	<div align = "center">
+	<h3 text-align = "center"> Guess the Number </h3>
+	<button id="1" class="button button1" onclick="myFunction(this.id)"> 1 </button>
+	<button id="2" class="button button1" onclick="myFunction(this.id)"> 2 </button>
+	<button id="3" class="button button1" onclick="myFunction(this.id)"> 3 </button>
+	<button id="4" class="button button1" onclick="myFunction(this.id)"> 4 </button>
+	<button id="5" class="button button1" onclick="myFunction(this.id)"> 5 </button>
+	<button id="6" class="button button1" onclick="myFunction(this.id)"> 6 </button>
+	<button id="7" class="button button1" onclick="myFunction(this.id)"> 7 </button>
+	<button id="8" class="button button1" onclick="myFunction(this.id)"> 8 </button>
+	<button id="9" class="button button1" onclick="myFunction(this.id)"> 9 </button>
+	<button id="10" class="button button1" onclick="myFunction(this.id)"> 10 </button>
+	</div>
+
+<script>
+var x = Math.floor((Math.random() * 10) + 1);
+function myFunction(clicked_button) {
+	if (clicked_button == x) {
+		document.getElementById(clicked_button).style = "background-color: Green";
+		alert(clicked_button + " is the correct answer!");
+	}
+	else {
+		document.getElementById(clicked_button).style = "background-color: Red";
+		}
+  
+}
+</script>
+</body>
+</html>
